@@ -1,7 +1,3 @@
-# Name: Jonah Hoffman
-# Date: February 3, 2023
-# Desription: A calculator.
-
 from tkinter import *
 from button_data import button_data
 
@@ -22,7 +18,7 @@ class MainGUI(Frame):
     def setupGUI(self):
         # display
         self.display = Label(
-            self,       # MainGUI class is parent of this label
+            self,       
             text="",
             anchor=E,
             bg="white",
@@ -122,7 +118,7 @@ class MainGUI(Frame):
 
 # Main
 window = Tk()
-window.title("The Reckoner")
+window.title("Simple Calculator")
 window.geometry(f"{WIDTH}x{HEIGHT}")
 
 p = MainGUI(window)
